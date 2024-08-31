@@ -38,12 +38,14 @@
 
 .left-container, .right-container{
     height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .left-container{
  background: #262525;
  width: 70%;
-
+padding-left: 3rem;
 }
 
 .right-container{
@@ -53,4 +55,77 @@
 
 .icons .fa-brands{
     color: #bbb;
+    font-size: 1.7rem;
 }
+
+.icons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.content{
+  margin-left: 4rem;
+}
+
+.content .intro{
+  font-size: 1.rem;
+  color: #fff;
+}
+
+.content .intro span{
+  color: #5DB9EE;
+}
+
+.content h1{
+  font-size: 4rem;
+  color: #28a7f1;
+}
+
+.content .detail{
+  font-size: 1.1rem;
+  color: #fff;
+  max-width: 38rem;
+  margin: 1.1rem 0 3rem 0;
+  line-height: 1.8rem;
+}
+
+.btn-container button{
+  border: .1rem solid #5DB9EE;
+  font-size: 1.1rem;
+  padding: .8rem 1.5rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: .5s ease;
+}
+
+button:nth-child(1){
+  background: #5DB9EE;
+  color: #262525;
+}
+
+button:nth-child(2){
+  background: transparent;
+  color: #5DB9EE;
+  margin-left: 2rem;
+}
+
+button:nth-child(1):hover{
+  background: transparent;
+  color: #5DB9EE;
+}
+
+button:nth-child(2):hover{
+  background: #5DB9EE;
+  color: #262525;
+}
+
+.icons .fa-brands{
+  cursor: pointer;
+  background: linear-gradient(#fff, #3877FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
